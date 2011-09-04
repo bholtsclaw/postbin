@@ -2,7 +2,9 @@
   <head>
     <title>{% block title %}PostBin - Debug web hooks{% endblock %}</title>
     <link href="/static/style.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/start/jquery-ui.css" type="text/css" rel="stylesheet" />    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     {% block header %}{% endblock %}
   </head>
   <body>
@@ -14,30 +16,5 @@
         {% block content %}{% endblock %}
       </div>
     </div>
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-6824126-14");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
-    <script type="text/javascript">
-    var uservoiceJsHost = ("https:" == document.location.protocol) ? "https://uservoice.com" : "http://cdn.uservoice.com"
-    document.write(unescape("%3Cscript src='" + uservoiceJsHost + "/javascripts/widgets/tab.js' type='text/javascript'%3E%3C/script%3E"))
-    </script>
-    <script type="text/javascript">
-    UserVoice.Tab.show({ 
-      key: 'postbin',
-      host: 'postbin.uservoice.com', 
-      forum: 'general', 
-      alignment: 'left', // 'left', 'right'
-      background_color:'lightgreen', 
-      text_color: 'black', // 'white', 'black'
-      hover_color: '#06C',
-      lang: 'en' // 'en', 'de', 'nl', 'es', 'fr'
-    })
-    </script>
   </body>
 </html>
